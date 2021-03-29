@@ -84,7 +84,7 @@ class MyPromise {
     }
     // 添加then方法
     then(onFulfilled, onRejected) {
-        const { _value, _status } = this
+        const { _value, _status } = this;
         // 返回一个新的Promise对象
         return new MyPromise((onFulfilledNext, onRejectedNext) => {
             // 封装一个成功时执行的函数
